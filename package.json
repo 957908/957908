@@ -1,0 +1,22 @@
+{
+  "name": "3d-developer-avatar-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Modern 3D Developer Avatar Portfolio with Interactive Theme",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^r128",
+    "three-addons": "^1.0.0",
+    "gsap": "^3.12.2",
+    "lil-gui": "^0.19.2"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@types/three": "^r128"
+  }
+}

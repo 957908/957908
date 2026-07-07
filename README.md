@@ -1,79 +1,147 @@
-# Hi there, I'm Kadam! 👋
+# 3D Developer Avatar Portfolio 🚀
 
-<p align="center">
-  <img src="assets/profile_banner.png" width="100%" alt="Developer Portfolio Banner" />
-</p>
+A professional, modern interactive 3D developer avatar portfolio built with **Three.js**, featuring dark/light theme toggle, smooth animations, and developer-focused design.
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Focus-Big%20Data%20%26%20Analytics-blueviolet?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Graduate-Computer%20Science%20Engineering-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-CDAC%20Postgraduate-orange?style=for-the-badge" />
-</p>
+## ✨ Features
+
+- **3D Interactive Avatar** - Procedurally generated 3D developer character
+- **Modern UI** - Professional gradient-based interface with glassmorphism
+- **Dark/Light Theme** - Toggle between dark and light modes with persistent storage
+- **Smooth Animations** - GSAP-powered animations for avatar interactions
+- **Responsive Design** - Works seamlessly on desktop and tablet
+- **Tech Stack Display** - Showcase your skills and experience
+- **Performance Optimized** - Efficient rendering with Three.js best practices
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone or download the repository
+cd 3d-developer-avatar-portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+Visit `http://localhost:5173` in your browser.
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+├── index.html           # Main HTML file
+├── package.json         # Project dependencies
+├── vite.config.js       # Vite configuration
+├── src/
+│   ├── main.js          # Application entry point
+│   ├── styles.css       # Global styles and theme
+│   ├── Avatar3D.js      # 3D avatar model and geometry
+│   ├── Scene3D.js       # Three.js scene setup
+│   ├── AnimationManager.js  # GSAP animations
+│   └── UIController.js  # UI interactions and theme toggle
+└── README.md
+```
+
+## 🎨 Customization
+
+### Modify Avatar Appearance
+
+Edit `src/Avatar3D.js`:
+```javascript
+// Change avatar color
+const headMaterial = new THREE.MeshPhongMaterial({
+  color: 0xYOURCOLOR,  // Hex color code
+  shininess: 100,
+});
+```
+
+### Update Theme Colors
+
+Edit `src/styles.css` CSS variables:
+```css
+:root {
+  --primary: #00d9ff;      /* Cyan */
+  --secondary: #1e90ff;    /* Blue */
+  --accent: #ff006e;       /* Pink */
+  --dark-bg: #0a0e27;      /* Dark background */
+}
+```
+
+### Update Developer Stats
+
+Edit `index.html` stats section:
+```html
+<div class="stat">
+  <span class="stat-label">Skills</span>
+  <span class="stat-value">20+</span>
+</div>
+```
+
+### Add Your Tech Stack
+
+Edit `index.html` tech stack list:
+```html
+<ul class="tech-stack">
+  <li>React & Vue</li>
+  <li>Three.js</li>
+  <!-- Add more -->
+</ul>
+```
+
+## 🎮 Interactive Controls
+
+- **Rotate Avatar** - Click "Rotate Avatar" button for smooth 360° rotation
+- **Dark/Light Mode** - Toggle theme with button in bottom controls
+- **Animate** - Trigger special animation sequence
+- **Mouse Follow** - Avatar responds to mouse movement (optional)
+
+## 🛠 Technologies Used
+
+- **Three.js** - 3D graphics library
+- **GSAP** - Animation library
+- **Vite** - Build tool and dev server
+- **CSS3** - Styling and animations
+- **JavaScript ES6+** - Application logic
+
+## 📱 Browser Compatibility
+
+- Chrome/Chromium (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🎯 Performance Tips
+
+1. **WebGL Context** - Check browser WebGL support
+2. **Shadow Maps** - Disable for lower-end devices
+3. **Particle Count** - Adjust in `Avatar3D.js` for performance
+
+## 📄 License
+
+Open source - feel free to use and modify!
+
+## 🤝 Contributing
+
+Suggestions and improvements are welcome! Feel free to fork and submit pull requests.
+
+## 🌟 Show Your Support
+
+If you find this useful, please give it a ⭐!
 
 ---
 
-## 👨‍💻 About Me
-I am a **Computer Science Engineering Graduate** specializing in **IoT, Cyber Security, and Blockchain**, currently pursuing my postgraduate specialization in **Big Data Analytics from C-DAC**. 
-
-I have hands-on experience in Exploratory Data Analysis (EDA), data cleaning, database management, ETL pipelines, and business intelligence dashboard development. 
-
-* 🎯 **Goal**: Seeking an entry-level role as a **Data Analyst / Big Data Engineer / Business Intelligence Engineer**.
-* 🔍 **Focus Areas**: Distributed Data processing (Spark/Hadoop), Data Warehousing, Security boundary models, and BI visualization.
-
----
-
-## 🛠️ Tech Stack & Skills
-
-<table>
-  <tr>
-    <td valign="top" width="50%">
-      <h4>Languages & Databases</h4>
-      <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
-      <img src="https://img.shields.io/badge/sql-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
-      <img src="https://img.shields.io/badge/hive-FDE047?style=for-the-badge&logo=apache&logoColor=black" />
-    </td>
-    <td valign="top" width="50%">
-      <h4>Big Data & Streaming</h4>
-      <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" />
-      <img src="https://img.shields.io/badge/PySpark-3670A0?style=for-the-badge" />
-      <img src="https://img.shields.io/badge/Hadoop-XXXXXX?style=for-the-badge&logo=apachehadoop&logoColor=yellow" />
-      <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" width="50%">
-      <h4>Machine Learning & Visualization</h4>
-      <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-      <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-    </td>
-    <td valign="top" width="50%">
-      <h4>Specializations</h4>
-      <img src="https://img.shields.io/badge/IoT-%23005C8A.svg?style=for-the-badge" />
-      <img src="https://img.shields.io/badge/Cyber_Security-Red?style=for-the-badge" />
-      <img src="https://img.shields.io/badge/Blockchain-Cyan?style=for-the-badge" />
-    </td>
-  </tr>
-</table>
-
----
-
-## 🚀 Highlight Capstone Project
-
-### 🔗 [Multi-Agent AI Data Lakehouse Platform](https://github.com/957908/Multi-Agent-AI-Data-Lakehouse-Platform-Betting-Site-Data-Intelligence)
-An enterprise-grade data intelligence console built for my **C-DAC Capstone Project**.
-* **Engineered** a real-time event-streaming pipeline using Apache Kafka and a Medallion Lakehouse structure.
-* **Trained** scikit-learn models (Isolation Forest, Random Forest, K-Means) for transaction category classification and anomaly boundary detection.
-* **Designed** a semantic vector search database (FAISS + Sentence-Transformers) served via a FastAPI backend for local RAG query workflows.
-* **Created** a responsive glassmorphism dark-theme HTML/CSS web console console featuring a live agent terminal log stream, visual ML feature weights diagnostics, and a floating interactive chatbot guide widget.
-
----
-
-## 📊 GitHub Activity & Metrics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=957908&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Kadam's GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=957908&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
+**Created with ❤️ for developers | Powered by Three.js & GSAP**

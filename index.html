@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Developer Avatar Portfolio</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <div id="canvas-container"></div>
+  
+  <div class="ui-overlay">
+    <header class="header">
+      <h1 class="title">Developer <span class="highlight">3D</span> Avatar</h1>
+      <p class="subtitle">Smart Modern Developer Theme</p>
+    </header>
+
+    <div class="stats-panel">
+      <div class="stat">
+        <span class="stat-label">Skills</span>
+        <span class="stat-value">20+</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Projects</span>
+        <span class="stat-value">15+</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Experience</span>
+        <span class="stat-value">5+ yrs</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn btn-primary" id="rotate-btn">Rotate Avatar</button>
+      <button class="btn btn-secondary" id="theme-btn">Dark Mode</button>
+      <button class="btn btn-accent" id="animate-btn">Animate</button>
+    </div>
+
+    <div class="info-panel">
+      <h2>Developer Profile</h2>
+      <ul class="tech-stack">
+        <li>React & Vue</li>
+        <li>Three.js</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>AI/ML</li>
+        <li>Cloud Services</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="loading-bar"></div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
